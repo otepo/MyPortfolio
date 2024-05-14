@@ -1,7 +1,7 @@
 /* GENERAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 
 body {
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -61,8 +61,8 @@ a:hover {
 }
 
 .logo {
- width: 200px;
- height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .logo:hover {
@@ -160,8 +160,16 @@ section {
 }
 
 .section-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
+
+.box-1 { grid-area: 1 / 1 / 3 / 4; }
+.box-2 { grid-area: 1 / 4 / 3 / 7; }
+.box-3 { grid-area: 4 / 1 / 6 / 7; }
 
 /* PROFILE SECTION */
 
@@ -294,16 +302,16 @@ section {
   position: absolute;
   right: -5rem;
 }
-.arrow-experience {
-  padding: 400px 0;
+.arrow-about {
+  padding: 800px 0;
 }
 .arrow-projects {
   padding: 90px 0;
 }
 
-/* .details-container p{
-  text-align: start;
-} */
+.details-container p{
+  color: black;
+}
 
 .details-container {
   padding: 1.5rem;
@@ -311,8 +319,9 @@ section {
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);  
+  border-color: rgb(163, 163, 163);
   text-align: center;
+
 }
 
 .section-container {
@@ -350,7 +359,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1.8rem;
   justify-content: space-around;
 }
 
@@ -363,6 +372,11 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+.text-container p {
+  font-size: 1.3rem;
+  color: black;
 }
 
 /* PROJECTS SECTION */
