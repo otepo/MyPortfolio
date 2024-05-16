@@ -244,7 +244,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 /* BUTTONS */
@@ -329,11 +329,15 @@ section {
   right: -5rem;
 }
 .arrow-about {
-  padding: 800px 0;
+  padding: 750px 0;
 }
 /* .arrow-projects {
   padding: 1px 0 ;
 } */
+
+.article-container {
+padding: 0.9rem;
+}
 
 .details-container p {
   color: black;
@@ -367,7 +371,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(0, 0, 0);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
