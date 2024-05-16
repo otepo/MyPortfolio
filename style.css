@@ -30,6 +30,22 @@ a,
 
 /* DESKTOP NAV */
 
+/* .nav1 {
+  justify-content: space-around;
+  align-items: center;
+  height: 14vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent; 
+  z-index: 1000;
+  transition: background-color 0.3s ease; 
+}
+
+.navbar-scrolled {
+  background-color: rgb(159, 159, 159); 
+} */
+
 nav,
 .nav-links {
   display: flex;
@@ -295,6 +311,10 @@ section {
   flex-direction: column;
 }
 
+.about-containers {
+  flex-wrap: wrap;
+}
+
 .about-containers,
 .about-details-container {
   display: flex;
@@ -311,9 +331,9 @@ section {
 .arrow-about {
   padding: 800px 0;
 }
-.arrow-projects {
-  padding: 90px 0;
-}
+/* .arrow-projects {
+  padding: 1px 0 ;
+} */
 
 .details-container p {
   color: black;
@@ -355,24 +375,26 @@ section {
 
 .experience-details-container {
   display: flex;
+  flex: 1;
   justify-content: center;
   flex-direction: column;
 }
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1rem;
+  gap: 10px;
   justify-content: space-between;
 }
 
 article {
   display: flex;
-  width: 7rem;
-  justify-content: space-between;
+  width: 10rem;
+
   gap: 1rem;
+  align-items: center;
 }
 
 article .icon {
@@ -419,6 +441,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: 300px;
 }
 
 .contact-info-upper-container {
